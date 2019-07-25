@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C48633E2-F211-41D8-BFD9-E2044B81B47A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Samples.StructuralPatterns</RootNamespace>
+    <AssemblyName>Structural Patterns</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adapter\ISFUniversalLife.cs" />
+    <Compile Include="Adapter\StateFarmUniversalLife.cs" />
+    <Compile Include="Adapter\UniversalLifeAdapter.cs" />
+    <Compile Include="Bridge\Products.cs" />
+    <Compile Include="Composite\BusinessProtection.cs" />
+    <Compile Include="Composite\FamilyProtection.cs" />
+    <Compile Include="Composite\LifeProducts.cs" />
+    <Compile Include="Facade\CalculationEngine.cs" />
+    <Compile Include="Facade\ProductDefinition.cs" />
+    <Compile Include="Facade\QuotingFacade.cs" />
+    <Compile Include="General\Product.cs" />
+    <Compile Include="Bridge\TermPlan.cs" />
+    <Compile Include="Bridge\TermPlan2013.cs" />
+    <Compile Include="Decorator\BenefitIncrease.cs" />
+    <Compile Include="General\BusinessExpense.cs" />
+    <Compile Include="General\Common.cs" />
+    <Compile Include="General\IProduct.cs" />
+    <Compile Include="Decorator\ProductDiscount.cs" />
+    <Compile Include="General\WholeLife.cs" />
+    <Compile Include="General\ProductRequest.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proxy\ICreateProduct.cs" />
+    <Compile Include="Proxy\ProductProxy.cs" />
+    <Compile Include="Proxy\SmokerProxy.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Class Diagrams\Adapter.jpg" />
+    <Content Include="Class Diagrams\Bridge.jpg" />
+    <Content Include="Class Diagrams\Composite.jpg" />
+    <Content Include="Class Diagrams\Decorator.jpg" />
+    <Content Include="Class Diagrams\Facade.jpg" />
+    <Content Include="Class Diagrams\Pattern_Comparison.jpg" />
+    <Content Include="Class Diagrams\Proxy.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

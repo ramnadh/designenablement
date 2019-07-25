@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F1C42782-4406-40A0-9129-CFEC93E5EB37}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Samples.CreationalPatterns</RootNamespace>
+    <AssemblyName>Creational Patterns</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractFactory\DI\BE105.cs" />
+    <Compile Include="AbstractFactory\DI\BE2013.cs" />
+    <Compile Include="AbstractFactory\DI\DI105.cs" />
+    <Compile Include="AbstractFactory\DI\IBusinessExpense.cs" />
+    <Compile Include="AbstractFactory\DI\IDIFactory.cs" />
+    <Compile Include="AbstractFactory\LI\ITermProduct.cs" />
+    <Compile Include="AbstractFactory\LI\LifeFactory.cs" />
+    <Compile Include="AbstractFactory\DI\IPaycheckProtection.cs" />
+    <Compile Include="AbstractFactory\LI\ILifeFactory.cs" />
+    <Compile Include="AbstractFactory\LI\ILifeProduct.cs" />
+    <Compile Include="AbstractFactory\DI\DIFactory.cs" />
+    <Compile Include="AbstractFactory\LI\ROP.cs" />
+    <Compile Include="AbstractFactory\LI\TermPlan.cs" />
+    <Compile Include="AbstractFactory\LI\WholeLife2013.cs" />
+    <Compile Include="Builder\BEExtended.cs" />
+    <Compile Include="Builder\DIBuilder.cs" />
+    <Compile Include="Builder\IBuilder.cs" />
+    <Compile Include="Builder\LifeBuilder.cs" />
+    <Compile Include="Builder\Product.cs" />
+    <Compile Include="Builder\WholeLifeExtended.cs" />
+    <Compile Include="Factory\ProductCreator.cs" />
+    <Compile Include="General\ChildRider.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prototype\Prototype.cs" />
+    <Compile Include="Prototype\WholeLifePremiumIllustrations.cs" />
+    <Compile Include="Prototype\WholeLife.cs" />
+    <Compile Include="Singleton\ApplicationCache.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Structural Patterns\Structural Patterns.csproj">
+      <Project>{c48633e2-f211-41d8-bfd9-e2044b81b47a}</Project>
+      <Name>Structural Patterns</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Class Diagrams\AbstractFactory.jpg" />
+    <Content Include="Class Diagrams\Builder.jpg" />
+    <Content Include="Class Diagrams\BuilderVSAbstractFactory.jpg" />
+    <Content Include="Class Diagrams\Factory.jpg" />
+    <Content Include="Class Diagrams\Prototype.jpg" />
+    <Content Include="Class Diagrams\Singleton.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

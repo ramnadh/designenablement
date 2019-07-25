@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Design Principles", "Design Principles\Design Principles.csproj", "{88388830-694F-45E0-97C2-1DDC8B962744}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational Patterns", "Creational Patterns\Creational Patterns.csproj", "{F1C42782-4406-40A0-9129-CFEC93E5EB37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Patterns", "Structural Patterns\Structural Patterns.csproj", "{C48633E2-F211-41D8-BFD9-E2044B81B47A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Behavioral Patterns", "Behavioral Patterns\Behavioral Patterns.csproj", "{CE98027C-7E4F-4337-95E2-15063ACD1AA7}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ramnadh.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Design\u0020Principles\\Design\u0020Principles.csproj
+		SccProjectName1 = Design\u0020Principles
+		SccLocalPath1 = Design\u0020Principles
+		SccProjectUniqueName2 = Creational\u0020Patterns\\Creational\u0020Patterns.csproj
+		SccProjectName2 = Creational\u0020Patterns
+		SccLocalPath2 = Creational\u0020Patterns
+		SccProjectUniqueName3 = Structural\u0020Patterns\\Structural\u0020Patterns.csproj
+		SccProjectName3 = Structural\u0020Patterns
+		SccLocalPath3 = Structural\u0020Patterns
+		SccProjectUniqueName4 = Behavioral\u0020Patterns\\Behavioral\u0020Patterns.csproj
+		SccProjectName4 = Behavioral\u0020Patterns
+		SccLocalPath4 = Behavioral\u0020Patterns
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88388830-694F-45E0-97C2-1DDC8B962744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88388830-694F-45E0-97C2-1DDC8B962744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88388830-694F-45E0-97C2-1DDC8B962744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88388830-694F-45E0-97C2-1DDC8B962744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1C42782-4406-40A0-9129-CFEC93E5EB37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1C42782-4406-40A0-9129-CFEC93E5EB37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1C42782-4406-40A0-9129-CFEC93E5EB37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1C42782-4406-40A0-9129-CFEC93E5EB37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C48633E2-F211-41D8-BFD9-E2044B81B47A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C48633E2-F211-41D8-BFD9-E2044B81B47A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C48633E2-F211-41D8-BFD9-E2044B81B47A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C48633E2-F211-41D8-BFD9-E2044B81B47A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE98027C-7E4F-4337-95E2-15063ACD1AA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE98027C-7E4F-4337-95E2-15063ACD1AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE98027C-7E4F-4337-95E2-15063ACD1AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE98027C-7E4F-4337-95E2-15063ACD1AA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
